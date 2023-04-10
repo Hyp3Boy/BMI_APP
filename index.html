@@ -2,24 +2,26 @@
 
 <html>
   <head>
-    <meta charset="utf8" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>BMI Website</title>
-    <link rel="stylesheet" href="stylesheet.css" />
     <script src="script.js"></script>
   </head>
 
   <body>
-    <h1>BMI Calculator Online Free Fast Download</h1>
-    <div id="input">
-      <label for="mass">Weight (Kg):</label>
-      <input type="number" id="mass" /><br /><br />
+    <div class="container">
+      <h1>BMI Calculator Online</h1>
+      <div id="input">
+        <label for="mass">Weight (Kg):</label>
+        <input type="number" id="mass" /><br /><br />
 
-      <label for="height">Height (cm):</label>
-      <input type="number" id="height" /><br />
-    </div>
-    <div id="output">
-      <p id="result"></p>
-      <button onclick="bmi()">Calcular</button>
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" /><br />
+      </div>
+      <div id="output">
+        <p id="result"></p>
+        <button onclick="bmi()">Calcular</button>
+      </div>
     </div>
   </body>
 </html>

@@ -10,7 +10,21 @@ function bmi() {
   if (isNaN(output)) {
     return window.alert("Please enter a valid number");
   }
-  console.log(output);
   //write the output on the page
-  document.getElementById("result").innerHTML = "Your BMI is: " + output;
+  if (output < 18.5) {
+    document.getElementById("result").innerHTML =
+      "Your BMI is: " + output + " - Underweight";
+  }
+  if (output >= 18.5 && output <= 24.9) {
+    document.getElementById("result").innerHTML =
+      "Your BMI is: " + output + " - Normal weight";
+  }
+  if (output >= 25 && output <= 29.9) {
+    document.getElementById("result").innerHTML =
+      "Your BMI is: " + output + " - Overweight";
+  }
+  if (output >= 30) {
+    document.getElementById("result").innerHTML =
+      "Your BMI is: " + output + " - Obese";
+  }
 }

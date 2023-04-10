@@ -3,20 +3,96 @@
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
+  background-color: #f6f4d2;
+}
+html,
+body {
   margin: 0;
-  padding: 0;
+  height: 100%;
 }
 body {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  height: 100vh;
-  width: 100vw;
+  align-items: center;
+}
+
+img {
+  width: 25%;
+  height: 65%;
+  object-fit: cover;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+#imagebcg {
+  width: 12.5%;
+  height: 60%;
+  position: absolute;
+  background-color: #cbdfbd;
+  left: 25%;
+  top: 20%;
 }
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 17.5%;
+  top: 25%;
+  padding: 90px 70px;
+  background-color: #cbdfbd;
+}
+.button {
+  letter-spacing: 1px;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f6f4d2;
+  justify-self: center;
+  width: 50%;
+}
+#output {
+  background-color: #cbdfbd;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+.container h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 10px 0;
+  background-color: #cbdfbd;
+}
+#input {
+  background-color: #cbdfbd;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#label1,
+#label2,
+#label1 label,
+#label2 label {
+  background-color: #cbdfbd;
+}
+p {
+  background-color: #cbdfbd;
+  margin: 0;
+  justify-self: center;
+  text-align: center;
 }

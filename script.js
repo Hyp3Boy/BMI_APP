@@ -6,6 +6,6 @@ function bmi() {
   var height = document.getElementById("height").value;
   
   var output = mass / Math.pow(height, 2);
-  console.log(result);
-  return result;
+  console.log(output);
+  return output;
 }

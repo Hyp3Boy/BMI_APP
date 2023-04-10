@@ -28,3 +28,7 @@ function bmi() {
       "Your BMI is: " + output + " - Obese";
   }
 }
+
+function go_to_calculator() {
+  window.location.href="calculator.html";
+}

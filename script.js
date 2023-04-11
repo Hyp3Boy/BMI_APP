@@ -7,7 +7,7 @@ function bmi() {
 
   let output = Math.round((mass / Math.pow(height, 2)) * 100) / 100;
   //if the output is NaN it should display an error message
-  if (isNaN(output)) {
+  if (isNaN(output) || output == Infinity || output == -Infinity) {
     return window.alert("Please enter a valid number");
   }
   //write the output on the page
@@ -38,5 +38,5 @@ function bmi() {
 }
 
 function go_to_calculator() {
-  window.location.href="calculator.html";
+  window.location.href = "calculator.html";
 }

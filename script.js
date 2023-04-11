@@ -13,19 +13,27 @@ function bmi() {
   //write the output on the page
   if (output < 18.5) {
     document.getElementById("result").innerHTML =
-      "Your BMI is: " + output + " - Underweight";
+      "Your BMI is: " + output + " - Underweight: Slight risk";
   }
-  if (output >= 18.5 && output <= 24.9) {
+  if (output >= 18.5 && output < 25) {
     document.getElementById("result").innerHTML =
-      "Your BMI is: " + output + " - Normal weight";
+      "Your BMI is: " + output + " - Normal weight: No risk";
   }
-  if (output >= 25 && output <= 29.9) {
+  if (output >= 25 && output < 30) {
     document.getElementById("result").innerHTML =
-      "Your BMI is: " + output + " - Overweight";
+      "Your BMI is: " + output + " - Overweight: Slight risk";
   }
-  if (output >= 30) {
+  if (output >= 30 && output < 35) {
     document.getElementById("result").innerHTML =
-      "Your BMI is: " + output + " - Obese";
+      "Your BMI is: " + output + " - Obese I: Moderate risk";
+  }
+  if (output >= 35 && output < 40) {
+    document.getElementById("result").innerHTML = 
+      "Your BMI is: " + output + " - Obese II: High risk";
+  }
+  if (output >= 40) {
+    document.getElementById("result").innerHTML = 
+      "Your BMI is: " + output + " - Obese III: Very high risk";
   }
 }
 

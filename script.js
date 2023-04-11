@@ -7,7 +7,12 @@ function bmi() {
 
   let output = Math.round((mass / Math.pow(height, 2)) * 100) / 100;
   //if the output is NaN it should display an error message
-  if (isNaN(output) || output == Infinity || output == -Infinity) {
+  if (
+    output < 0 ||
+    isNaN(output) ||
+    output == Infinity ||
+    output == -Infinity
+  ) {
     return window.alert("Please enter a valid number");
   }
   //write the output on the page
@@ -28,11 +33,11 @@ function bmi() {
       "Your BMI is: " + output + " - Obese I: Moderate risk";
   }
   if (output >= 35 && output < 40) {
-    document.getElementById("result").innerHTML = 
+    document.getElementById("result").innerHTML =
       "Your BMI is: " + output + " - Obese II: High risk";
   }
   if (output >= 40) {
-    document.getElementById("result").innerHTML = 
+    document.getElementById("result").innerHTML =
       "Your BMI is: " + output + " - Obese III: Very high risk";
   }
 }
